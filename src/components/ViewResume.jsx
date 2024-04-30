@@ -108,8 +108,8 @@ function ViewResume() {
    console.log(elementId,e)
     try {
       navigate(`/ResumetoPdf/${e._id}`);
-      users.setCurrentData({ elementId, e, i });
-      handleGeneratePDF(e._id);
+      // users.setCurrentData({ elementId, e, i });
+      // handleGeneratePDF(e._id);
       console.log('Current data set successfully.');
       // navigate(`/profile/${id}/viewresumedata`)
     } catch (error) {
