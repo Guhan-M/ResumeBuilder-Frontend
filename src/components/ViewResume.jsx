@@ -107,7 +107,7 @@ function ViewResume() {
   const generatePDF = async (elementId, e, i) => {
    console.log(elementId,e)
     try {
-      navigate(`/ResumetoPdf/${e._id}`);
+      // navigate(`/ResumetoPdf/${e._id}`);
       users.setCurrentData({ elementId, e, i });
       handleGeneratePDF(e._id);
       console.log('Current data set successfully.');
@@ -123,8 +123,11 @@ function ViewResume() {
       });
       if (generatePDFResponse.status === 201) {
         // Handle success
+        console.log(generatePDFResponse.data?.filenames)
         console.log("PDF generated successfully");
-        navigate(`/dashboard`);
+        const downloadUrl = `${API_URL}/download/${generatePDFResponse.data?.filenames}`;
+        window.open(downloadUrl, '_blank');
+        // navigate(`/dashboard`);
       } else {
         // Handle failure
         console.error("Failed to generate PDF.");
