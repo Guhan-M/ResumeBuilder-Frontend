@@ -142,7 +142,7 @@ function ViewResume() {
     <>
       <TopBar />
       {data.length > 0 || data2.length > 0 || data3.length > 0 ? (
-        <div>
+        <div key={`unique-${Date.now()}-${Math.floor(Math.random() * 1000)}`}>
           <div id="content1">
             <div className="bodyformstyle">
               {data.filter((e) => e.id === id).map((e, i) => (
