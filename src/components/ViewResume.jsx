@@ -107,7 +107,7 @@ function ViewResume() {
   const generatePDF = async (elementId, e, i) => {
    console.log(elementId,e)
     try {
-      // navigate(`/ResumetoPdf/${e._id}`);
+      navigate(`/ResumetoPdf/${e._id}`);
       users.setCurrentData({ elementId, e, i });
       handleGeneratePDF(e._id);
       console.log('Current data set successfully.');
