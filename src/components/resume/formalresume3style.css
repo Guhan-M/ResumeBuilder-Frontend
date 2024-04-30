@@ -1,0 +1,135 @@
+#containerform {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin: 20px; */
+    padding: 0;
+    color: #333;
+    width: 800px;
+  
+  }
+  .containerformbody{
+    display: flex;
+    justify-content: center;
+  }
+  #container3 {
+    
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #header3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+  }
+
+  #name-container3 {
+    flex: 1;
+  }
+
+  #name3 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  #job-title3 {
+    font-size: 20px;
+    color: #777;
+    margin-bottom: 0;
+  }
+
+  #contact3 {
+    flex: 1;
+    text-align: right;
+  }
+
+  #contact3 h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  #contact3 p {
+    margin: 5px 0;
+    color: #555;
+  }
+
+  #sectiontitle3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  #sectiontitle3::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 8px;
+  }
+
+  #experience3,
+  #education3 {
+    margin-bottom: 30px;
+  }
+
+  #experience3 h4,
+  #education3 h4 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  #experience3 p,
+  #education3 p {
+    margin: 5px 0;
+    color: #555;
+  }
+
+  #objective3,
+  #skills3 {
+    margin-bottom: 30px;
+  }
+
+  #objective h4,
+  #skills h4 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  #objective3 p,
+  #skills3 p {
+    margin: 5px 0;
+    color: #555;
+  }
+
+  #skills3 ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #skills3 li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+
+  #skills3 li .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    margin-right: 5px;
+  }

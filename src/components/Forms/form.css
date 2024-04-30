@@ -1,0 +1,18 @@
+.addthecontent {
+    margin-left: 5%;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.removethecontent{
+    cursor: pointer;
+}
+
+.formstyles{
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}

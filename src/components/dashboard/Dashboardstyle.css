@@ -1,0 +1,108 @@
+
+/*   
+  .bg-primary {
+    /* Add styles for the primary background color */
+  /* } */ 
+  
+  /* .bg-light {
+    /* Add styles for the light background color */
+  /* } */
+  
+  /* Template Container */
+  .template-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    flex-wrap: wrap;
+  }
+  
+  /* Template Card */
+  .template-card {
+    margin-bottom: 5%;
+  }
+  
+  #about {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* Set background color */
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #343a40; /* Set text color */
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #6c757d; /* Set text color */
+  }
+  
+  #about ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #about ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #6c757d; /* Set text color */
+  }
+  
+  #about ul li:before {
+    content: "\f058"; /* FontAwesome bullet icon code */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: #007bff; /* Set icon color */
+  }
+  
+
+/* Service section */
+#services {
+    padding: 80px 0; /* Adjust padding as needed */
+  }
+  
+  /* Service list */
+  #services .service-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  /* Individual service item */
+  #services .service-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Icon */
+  #services .service-icon {
+    margin-right: 15px;
+    font-size: 20px;
+  }
+  
+  /* Text */
+  #services .service-text {
+    font-size: 16px;
+  }
+  
+  /* Center align text */
+  #services .text-center {
+    text-align: center;
+  }
+  
+  /* Larger font size for headings */
+  #services h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  
+  #services p.lead {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
