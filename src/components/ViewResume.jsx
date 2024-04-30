@@ -109,7 +109,7 @@ function ViewResume() {
     try {
       navigate(`/ResumetoPdf/${e._id}`);
       // users.setCurrentData({ elementId, e, i });
-      // handleGeneratePDF(e._id);
+      handleGeneratePDF(e._id);
       console.log('Current data set successfully.');
       // navigate(`/profile/${id}/viewresumedata`)
     } catch (error) {
@@ -123,11 +123,11 @@ function ViewResume() {
       });
       if (generatePDFResponse.status === 201) {
         // Handle success
-        console.log(generatePDFResponse.data?.filenames)
+        let data =generatePDFResponse.data?.sendfilename
+        console.log(generatePDFResponse.data)
         console.log("PDF generated successfully");
-        const downloadUrl = `${API_URL}/download/${generatePDFResponse.data?.filenames}`;
+        const downloadUrl = ` ${API_URL}/pdf/${data}`;
         window.open(downloadUrl, '_blank');
-        // navigate(`/dashboard`);
       } else {
         // Handle failure
         console.error("Failed to generate PDF.");
@@ -137,7 +137,7 @@ function ViewResume() {
       console.error('Error generating PDF:', error);
     }
   }
-  console.log(data3)
+  console.log(data2)
   return (
     <>
       <TopBar />
