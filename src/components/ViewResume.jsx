@@ -123,7 +123,7 @@ function ViewResume() {
       });
       if (generatePDFResponse.status === 201) {
         // Handle success
-        let data =generatePDFResponse.data?.sendfilename
+        let data = await generatePDFResponse.data?.sendfilename
         console.log(generatePDFResponse.data)
         console.log("PDF generated successfully");
         const downloadUrl = ` ${API_URL}/pdf/${data}`;
