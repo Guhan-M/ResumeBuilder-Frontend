@@ -104,18 +104,19 @@ function ViewResume() {
   };
 
 
-  const generatePDF = async (elementId, e, i) => {
-   console.log(elementId,e)
+const generatePDF = async (elementId, e, i) => {
+    console.log(elementId, e);
     try {
-      navigate(`/ResumetoPdf/${e._id}`);
-      // users.setCurrentData({ elementId, e, i });
-      handleGeneratePDF(e._id);
-      console.log('Current data set successfully.');
-      // navigate(`/profile/${id}/viewresumedata`)
+        navigate(`/ResumetoPdf/${e._id}`);
+        setTimeout(() => {
+            handleGeneratePDF(e._id);
+            console.log('Current data set successfully.');
+        }, 5000); // Adjust the delay time (in milliseconds) as needed
+        // navigate(`/profile/${id}/viewresumedata`)
     } catch (error) {
-      console.error('Error setting current data:', error);
+        console.error('Error setting current data:', error);
     }
-  };
+};
   async function handleGeneratePDF(id) {
     try {
       const generatePDFResponse = await AxiosService.post(ApiRoutes.GENERATEPDF.path, JSON.stringify({id:id}), {
