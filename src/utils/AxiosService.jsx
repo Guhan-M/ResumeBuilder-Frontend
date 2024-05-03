@@ -1,9 +1,10 @@
 import axios from 'axios'
 
-// https://resume-builder-backend-guq3.onrender.com
+// https://resume-builder-backend-aap4.onrender.com
+// https://resumebuilder-backend-xzhm.onrender.com
 // http://localhost:8000/
 const AxiosService = axios.create({
-    baseURL:"https://resume-builder-backend-guq3.onrender.com/",
+    baseURL:" https://resumebuilder-backend-xzhm.onrender.com/",
     headers:{
         "Content-Type":"application/json"
     }
